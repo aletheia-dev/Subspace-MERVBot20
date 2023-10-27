@@ -30,7 +30,8 @@ This Subspace/Continuum bot core is based on MERVBot v6.8 by Catid. The original
 - Run the bot either from Visual Studio or by double-clicking `_out\Release\MERVBot20.exe`.
 - In the Subspace/Continuum chat, type /!login <your operator password> to gain access to the bot. If you didn't set a password for your name in `Operators.txt`, you will be logged in automatically.
 - When you are done using the bot, select the console window and press a key to close it. CAUTION: Do not close the console window to shut down the bot.
-- See [Frequently Asked Questions](./doc/faq.md) for additional infos on troubleshooting.
+
+See [Frequently Asked Questions](./doc/faq.md) for additional infos on troubleshooting.
 
 ## Thanks
 This work has been done out of appreciation for Catid's remarkable effort two decades ago to provide us with a bot core for this wonderful game. Also thanks to all those coders and hackers who contributed to the original project, like Snrrrub, OmegaFirebolt, SOS, Coconut Emulator, Ave-iator, Cyan~Fire and BaK. 
