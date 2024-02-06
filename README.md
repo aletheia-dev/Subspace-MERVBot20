@@ -34,4 +34,4 @@ This Subspace/Continuum bot core is based on MERVBot v6.8 by Catid. The original
 See [Frequently Asked Questions](./doc/faq.md) for additional infos on troubleshooting.
 
 ## Thanks
-This work has been done out of appreciation for Catid's remarkable effort two decades ago to provide us with a bot core for this wonderful game. Also thanks to all those coders and hackers who contributed to the original project, like Snrrrub, OmegaFirebolt, SOS, Coconut Emulator, Ave-iator, Cyan~Fire and BaK. 
+This work has been done out of appreciation for Catid's remarkable effort two decades ago to provide us with a bot core for this wonderful game. Also props to all those coders and hackers who contributed to the original project, like Snrrrub, OmegaFirebolt, SOS, Coconut Emulator, Ave-iator, Cyan~Fire and BaK. 
