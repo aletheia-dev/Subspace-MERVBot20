@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{81e1fa53-c565-41f9-85b5-ced6cbeb4572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{3b509f38-1b40-42eb-a813-e9cd777a201f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface">
+      <UniqueIdentifier>{7edb7d81-54f7-4ad5-9366-f059c07bfbcf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Client\Calc.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\Checksum.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\Chunk.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\ClientProt.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\ClientTypes.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\Encrypt.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\Prng.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\Sockets.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\SpecialProt.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Client\System.ixx">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\BotDb.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\BotDb.ixx">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\BotInfo.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\BotInfo.ixx">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\BotStore.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\BotStore.ixx">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\CoreCmd.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\CoreCmd.ixx">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Host.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Host.ixx">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Algorithms.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\BotEvent.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Command.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Config.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\ModuleBase.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Observable.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Player.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Playfield.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\Settings.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Interface\SpawnBase.ixx">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
