@@ -1,0 +1,86 @@
+ ________   __                               ___       __________        __   
+ \______ \ |__| ______ ____  ___________  __| _/       \______   \ _____/  |_ 
+  |    |  \|  |/  ___// ___\/  _ \_  __ \/ __ |  ______ |    |  _//  _ \   __\
+  |    |   \  |\___ \\  \__(  <_> )  | \/ /_/ | /_____/ |    |   (  <_> )  |  
+ /_______  /__/____  >\___  >____/|__|  \____ |         |______  /\____/|__|  
+         \/        \/     \/                 \/                \/             
+
+                                   Changelog
+
+
+
+Version 1.5
+- A player or Discord user name can be abbreviated unambiguously when sending
+  private messages to a Discord user or Subspace player, respectively.
+- The initiation of an exchange of private messages between a Subspace player
+  and a Discord user has been restricted to linked players and Discord users. 
+  An unlinked player or Discord user is still able to receive and reply to a 
+  private message from a linked sender.
+
+Version 1.4
+- Transmitting of private messages from a Subspace player to a Discord user by
+  means of a private message to Discobot in the format /<name>:<message>
+  A Discord user receives a private message from a player as a direct message
+  from Discobot. The established direct message channel to Discobot can then 
+  be used to send messages from Discord to the related Subspace player simply 
+  by sending direct messages to the bot. After a first private message has 
+  been sent to a Discord user, a player can omit the Discord user name in 
+  succeeding private messages to this user.
+- Transmitting of private messages from a Discord user to a Subspace player by
+  means of a direct message to Discobot in the format /pm <name>:<message>
+- Improved player table to show arena, spectators, squads, frequencies, wins
+  and losses.
+
+Version 1.3
+- New Discord command /link to define a link between a Discord account and the
+  corresponding player in Subspace. On executing the command, the player with
+  the related name receives a private message with a request, which has to be 
+  confirmed to establish the link. The link is required for a user to transmit
+  public and team messages from Discord to Subspace.
+- New Discord command /unlink to dissolve a link between a Discord account and
+  a Subspace player.
+- Configuration parameter 'ChatChannelId' extended to enable the definition of
+  a chat channel for each arena in the format <id>:<arena>[,<id>:<arena>..]
+- Formatting of group mentions in public and team messages to be functioning
+  in Discord.
+
+Version 1.2
+- New command !players to print a table of all players who are present in the
+  bot's arena.
+- New configuration parameter 'CreatePlayersMessage' to enable or disable the
+  tracking of player presence in the bot's arena. If enabled, a player list is
+  posted to the Subspace chat channel in Discord when the bot is started. The 
+  player list is updated when a player enters or leaves the arena.
+- New configuration parameter 'PinPlayersMessage' to pin the player list to 
+  the pinboard of the Subspace chat channel. This function requires tracking
+  of player presence to be enabled.
+- New configuration parameter 'PlayersMessageChannelId' to additionally post a
+  player list to another channel with the specified id. This function requires
+  the tracking of player presence to be enabled.
+
+Version 1.1
+- Blacklist for arena spam messages that shall not be transmitted to Discord.
+- New configuration parameter 'MentionBlacklist' for filtering out blacklisted
+  mentions from messages to Discord.
+- Adding of the mention @4vs4prac to arena messages sent to Discord as replies
+  to !spam commands.
+- Executing bot commands from Discord. A bot command has to start either with
+  a slash, a dot or an exclamation mark. Discobot sends a reply on the Discord
+  chat channel that is only visible to the user who issued the command.
+- Transmitting of public and team messages from Discord to Subspace. A team 
+  message typed in Discord has to start with two slashes. A Discord user can
+  only send team messages to the default spectator frequency.
+
+Version 1.0 (31.09.2023)
+- Transmitting of public, team and arena messages from Subspace to Discord in
+  a dedicated format. Public and team messages are shown with dedicated icons.
+  Arena messages are formatted as highlighted text.
+- Filtering out of messages to Discord that start with a special character for
+  commands.
+- Buffering of arena messages that are printed in fast succession, like those
+  of practice or match stats, to be concatenated in Discord as a highlighted
+  text.
+- Tables, like those of practice and match stats, are formatted to nicely fit 
+  into highlighted Discord messages.
+- Textfile 'Blacklist' for message substrings that shall not be propagated to 
+  Discord, like repeatedly sent arena messages from other bots.
