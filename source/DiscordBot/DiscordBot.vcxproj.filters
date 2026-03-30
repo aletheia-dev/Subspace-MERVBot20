@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Quelldateien\Modules">
+      <UniqueIdentifier>{cac5ef2b-83fe-42b1-a14e-d7882128dd5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Plugin">
+      <UniqueIdentifier>{c339aafe-16c8-40ad-a2d3-2cb1f7cf305f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Plugin\PluginMain.cpp">
+      <Filter>Quelldateien\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Plugin\Spawn.ixx">
+      <Filter>Quelldateien\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Modules\TestHelper.cpp">
+      <Filter>Quelldateien\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Modules\TestHelper.ixx">
+      <Filter>Quelldateien\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Modules\TransferSToD.cpp">
+      <Filter>Quelldateien\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Modules\TransferSToD.ixx">
+      <Filter>Quelldateien\Modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
