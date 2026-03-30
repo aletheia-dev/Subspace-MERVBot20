@@ -1,0 +1,4 @@
+infolder MERVBot20:
+delete folders: vs. x64 sources/4v4Bot/x64 sources/DiscordBot/x64 sources/MERVBot20Lib/x64 sources/NvNPlugin/x64
+create zip file by selecting: bin config doc include lib source and all files
+rename the zip file to MERVBot20(...) and move it to bak

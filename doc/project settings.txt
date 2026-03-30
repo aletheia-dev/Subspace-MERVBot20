@@ -1,0 +1,90 @@
+zlib für x64 generieren
+	CMAME nach C:\Program Files installieren
+	powershell -Command "(Invoke-WebRequest -Uri https://git.io/JnHTY -OutFile install_zlib.bat)"; ./install_zlib.bat; del install_zlib.bat
+
+
+
+MervBot20
+---------
+Alle Konfigurationen:
+	Allgemein:
+		C++-Sprachstandard		ISO-Standard C++20
+
+	C++:
+		Allgemein:
+			Zusätzliche Incl. Verz.
+						.\include\zlib-1.2
+		Sprache:
+			Konformitätsmodus: Standard
+
+		Erweitert:
+			Bestimmte Warnungen deaktivieren	5105
+
+	Linker:
+		Eingabe:
+			Zusätzliche Abhängigk.	dpp.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)
+
+	Erweitert:
+		Zeichensatz			Multibyte-Zeichensatz verwenden
+
+	Debugging:
+		Arbeitsverzeichnis		$(OutDir)
+
+Debug:
+	Linker:
+		Allgemein:
+			Zusätzliche Bibverz.	.\lib\Debug\zlib-1.2
+
+Release:
+	Linker:
+		Allgemein:
+			Zusätzliche Bibverz.	.\lib\Release\zlib-1.2
+
+
+MervBot20Lib
+------------
+	MervBot20 settings, s.o.
+	VC++-Verzeichnisse:
+		Alle Module sind öffentlich	ja
+
+	C++:
+		Allgemein:
+			Debuginformationsformat	C7-kompatibel
+
+
+DLL Plugin settings
+----------------------------------------------
+	MervBot20Lib zu Projektverweisen (Verweise) hinzufügen
+	x64 build auswählen
+	MervBot20 settings, s.o.
+
+Alle Konfigurationen:
+	C++
+		Allgemein
+			Zusätzliche Incverz.  	..\..\include\dpp-10.0	
+		Vorkompilierter Header		nicht verwenden
+
+	Linker
+		Eingabe:
+			Zusätzliche Abhängigk.	dpp.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)
+
+Debug:
+	Linker
+		Allgemein:
+			Zusätzliche Bibverz.	..\..\lib\Debug\dpp-10.0
+	
+	Build Ereignisse
+		Postbuildereignis
+				Befehlszeile	copy .\config\*.* $(OutDir)
+Release:
+	Linker
+		Allgemein:
+			Zusätzliche Bibverz.	..\..\lib\Release\dpp-10.0
+
+	Build Ereignisse
+		Postbuildereignis
+				Befehlszeile	copy .\config\*.* $(OutDir)
+						copy $(OutDir)\$(TargetFileName) ..\..\_out
+						copy .\config\*.* ..\..\_out
+
+
