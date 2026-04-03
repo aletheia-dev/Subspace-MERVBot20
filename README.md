@@ -2,7 +2,7 @@
 An extensible bot core for the multiplayer online game Subspace/Continuum
 
 ## About
-This Subspace/Continuum bot core is based on MERVBot v6.8 by Catid. The original 32 bit code has been refactored for 64 bit with the C++ 20 standard.
+This Subspace/Continuum bot core is based on MERVBot v6.8 by Catid. The original 32 bit code has been refactored for 64 bit in the C++ 20 standard.
 
 ## Setup
 
